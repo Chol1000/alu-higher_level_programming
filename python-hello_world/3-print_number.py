@@ -3,7 +3,12 @@
 number = 98  # Example integer value
 
 try:
+    # Ensure the value is an integer
+    if not isinstance(number, int):
+        raise TypeError("number must be an integer")
+    
     # Printing the integer followed by "Battery street"
     print(f"{number} Battery street")
-except TypeError:
-    print("number must be an integer")
+
+except TypeError as e:
+    print(e)
