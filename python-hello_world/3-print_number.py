@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-
-number = 98  # Example integer value
-
 try:
-    # Ensure the value is an integer
-    if not isinstance(number, int):
-        raise TypeError("number must be an integer")
     
-    # Printing the integer followed by "Battery street"
+    number = 98
+
+    # Printing the integer followed by a specific string using f-string
     print(f"{number} Battery street")
 
-except TypeError as e:
-    print(e)
+except Exception as e:
+    print(f"An error occurred: {e}")
